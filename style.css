@@ -11,7 +11,8 @@ header h1{
     text-align: center;
 }
 .user-info{
-    display:flex
+    display:flex;
+    justify-content: space-between;
 
 }
 #settingsButton{
@@ -21,4 +22,29 @@ header h1{
     color: white
     font-size: 22px;
    
+}
+
+/* main section */
+.balance-card{
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    border-radius: 20px;
+    box-shadow: whitesmoke;
+    padding: 10px;
+}
+#totalLabel{
+    font-size:large;
+    font-weight: bold;
+}
+#totalAmount{
+    font-size: large;
+}
+#periodSelect{ 
+    font-size: large;
+    border-color: orange;
+    background:orange;
+     color:white;
+     border-radius: 30px;
+    cursor: pointer;
 }
