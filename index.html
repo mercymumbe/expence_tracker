@@ -15,34 +15,36 @@
         <h1>PERSONAL FINANCE</h1>
         <div class="user-info">
             <p id="greeting">Hello there!</p>
-        <button id="settingsButton"><a href="https://fontawesome.comgear"><i class="fa-solid fa-gear"></i></a></button>
-    </div>
+            <button id="settingsButton"><a href="https://fontawesome.comgear"><i
+                        class="fa-solid fa-gear"></i></a></button>
+        </div>
     </header>
-<!-- main section -->
-<main class="dashboard">
- <!-- Total expenses card -->
-            <section class="balance-card">
-                <div>
-                    <p id="totalLabel">Total Expenses</p>
-                    <h2 id="totalAmount">KES 0.00</h2>
-                </div>
+    <!-- main section -->
+    <main class="dashboard">
+        <!-- Total expenses card -->
+        <section class="balance-card">
+            <div>
+                <p id="totalLabel">Total Expenses</p>
+                <h2 id="totalAmount">KES 0.00</h2>
+            </div>
 
-                <select id="periodSelect"
-                        aria-label="Expense period">
-                    <option value="today" selected>Today</option>
-                    <option value="week">This Week</option>
-                    <option value="month">This Month</option>
-                
-                </select>
-            </section>
-            <!-- Expense categories -->
-            <section class="categories">
-                <div class="section-heading">
-                    <h2>Categories</h2>
-                </div>
+            <select id="periodSelect" aria-label="Expense period">
+                <option value="today" selected>Today</option>
+                <option value="week">This Week</option>
+                <option value="month">This Month</option>
 
-            </section>        
-</main>
+            </select>
+        </section>
+        <!-- Expense categories -->
+        <section class="categories">
+            <div class="section-heading">
+                <h2>Categories</h2>
+            </div>
+            <div class="category-grid" id="categoryGrid">
+                <!-- JavaScript will display category cards here -->
+            </div>
+        </section>
+    </main>
 
 </body>
 
