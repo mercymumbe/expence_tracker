@@ -10,17 +10,25 @@ const categories = [
 
 const categoryGrid = document.getElementById("categoryGrid");
 
-function displayCategories() {
-    categoryGrid.innerHTML = categories.map(category => {
-        const { name, amount } = category;
-
-        return `
-            <div class="category-card">
-                <h3>${name}</h3>
-                <p>$ ${amount.toLocaleString("en-US")}</p>
-            </div>
-        `;
-    }).join("");
+function loadCategories() {
+    let new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (categories.length > 0) {
+                resolve(categories);
+            } else {
+                reject("No categories found.");
+            }
+        }, 1000);
+    });
 }
+
+loadCategories()
+    .then(data => {
+        displayCategories(data);
+        statusMessage.textContent = "Categories loaded successfully!";
+    })
+    .catch(error => {
+        statusMessage.textContent = error.message;
+    });
 
 displayCategories();
