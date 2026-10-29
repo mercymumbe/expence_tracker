@@ -1,10 +1,11 @@
 // categories
 const categories = [
-    { name: "Medical", amount: 500 },
+    { name: "Medical", amount: 100 },
     { name: "Shopping", amount: 2000 },
     { name: "Food", amount: 240 },
-    { name: "Transport", amount: 300 }
-     { name: "Other", amount: 2132 }
+    { name: "Transport", amount:1500 },
+    { name: "Other", amount: 2132 }
+    
 ];
 
 const categoryGrid = document.getElementById("categoryGrid");
